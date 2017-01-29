@@ -1,0 +1,24 @@
+{
+    "name": "brookinsconsulting/bcdatetimefilter",
+    "description": "eZ Publish Legacy extended attribute filter extension which provides a stable and flexible solution which allows for a datetime stamp filtering solution. Provides for greater fetch filtering by date time stamp!",
+    "type": "ezpublish-legacy-extension",
+    "keywords": [ "eZ Publish", "date", "time", "timestamp", "extended attribute filter", "filter objects by datetime" ],
+    "homepage": "https://github.com/brookinsconsulting/bcdatetimefilter",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name" : "Brookins Consulting",
+            "homepage": "http://brookinsconsulting.com",
+            "email": "info@brookinsconsulting.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.0.0",
+        "ezsystems/ezpublish-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "bcdatetimefilter"
+    }
+}
