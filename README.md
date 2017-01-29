@@ -124,6 +124,14 @@ The solution is configured to work virtually by default once properly installed.
 
 * Add the extended attribute filter provided into your template fetch.
 
+### Example
+
+The following example list_count fetch usage fetches a count of all objects within the current year.
+
+    {def $children_count=fetch( 'content', 'list_count', hash( 'parent_node_id', $home_page_root_node_id,
+                                                                                'extended_attribute_filter', hash( 'id', 'BcDateTimeExtendedFilter', 'params', hash( 'published', makedate( 1, 1, currentdate()|datetime( 'custom', '%Y' ) ) ) ),
+                                                                                'depth', $home_page_fetch_depth
+                                                                             ) )}
 
 Troubleshooting
 ===============
